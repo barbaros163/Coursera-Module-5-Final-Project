@@ -1,0 +1,36 @@
+
+div.container {
+	border: 1px solid #DCDCDC;
+	background-color: #FFF8DC;
+	margin: 50px;
+	margin-right: auto;
+    margin-left: auto;
+}
+div>p {
+	padding: 1px 15px 15px 15px;
+	font-family: 'Oswald', sans-serif;
+	color: #2F4F4F;
+	font-size: 1.5em;
+}
+
+#header-nav {
+	border: 1px solid gray;
+	background-color: #F5F5DC;
+}
+a.navbar-brand {
+	color: #8FBC8F;
+	font-weight: bolder;
+}
+#nav-list a {
+	font-weight: bolder;
+	text-align: center;
+}
+/***** Change the link color on hover *****/
+#nav-list a:hover {
+	background-color: #696969;
+	color: #F0FFFF;
+}
+
+
+
+
