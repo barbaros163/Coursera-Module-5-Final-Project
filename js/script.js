@@ -18,7 +18,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var dc = {};
 
-var homeHtml = "snippets/home-snippet.html";
+var homeHtmlUrl = "snippets/home-snippet.html";
 var allCategoriesUrl =
   "https://davids-restaurant.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
@@ -48,7 +48,7 @@ var insertProperty = function (string, propName, propValue) {
   string = string
     .replace(new RegExp(propToReplace, "g"), propValue);
   return string;
-}
+};
 
 // Remove the class 'active' from home and switch to Menu button
 var switchMenuToActive = function () {
@@ -59,7 +59,7 @@ var switchMenuToActive = function () {
 
   // Add 'active' to menu button if not already there
   classes = document.querySelector("#navMenuButton").className;
-  if (classes.indexOf("active") == -1) {
+  if (classes.indexOf("active") === -1) {
     classes += " active";
     document.querySelector("#navMenuButton").className = classes;
   }
